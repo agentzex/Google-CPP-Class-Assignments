@@ -30,7 +30,7 @@ shared_ptr<Composer> Database::GetComposer(string in_last_name)
 {
 	for (int i = 0; i < next_slot; i++) {
 		if (composers[i]->get_last_name() == in_last_name) {
-			cout << "Composer found at index: " << i << endl;
+			cout << "Composer: " << in_last_name << " - found at index: " << i << endl;
 			return composers[i];
 		}
 	}
